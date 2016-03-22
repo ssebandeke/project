@@ -1,0 +1,7 @@
+<lu>
+  {{#each model as |organization|}}
+    <li>{{link-to organization.name 'organization' organization  }}</li>
+  {{/each}}
+</lu>
+<!-- <button {{action 'goToAuctions'}}>continue</button> -->
+ {{outlet}}

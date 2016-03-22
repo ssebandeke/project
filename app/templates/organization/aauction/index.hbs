@@ -1,0 +1,8 @@
+<h5>Products</h5>
+    {{link-to 'New product' 'organization.aauction.products.new'}}
+    <ul>
+        {{#each model.products as |prouct|}}
+            <li>{{product.title}}</li>
+        {{/each}}
+    </ul>
+{{outlet}}

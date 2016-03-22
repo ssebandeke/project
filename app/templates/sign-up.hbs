@@ -1,0 +1,28 @@
+<h3>Sign up</h3>
+<div class="input-group">
+  <label>Name</label>
+  {{input value=model.name}}
+</div>
+<br/>
+<div class="input-group">
+  <label>Email Address</label>
+  {{input value=model.emailAddress}}
+</div>
+<br/>
+<div class="input-group">
+  <label>password</label>
+  {{input type="password" value=model.password}}
+</div>
+<br/>
+<div class="input-group">
+  <label>Physical address</label>
+  {{textarea value=model.physicalAddress}}
+</div>
+<br/>
+<div class="input-group">
+  <label>Phone Number</label>
+  {{input value=model.phoneNumber}}
+</div>
+<br/>
+<button {{action 'SaveUser'}}>Submit</button>
+{{outlet}}

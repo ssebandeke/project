@@ -1,0 +1,15 @@
+<h3>Login</h3>
+<div class="input-group">
+  <label>Email Address</label>
+  {{input value=identification}}
+</div>
+<br/>
+<div class="input-group">
+  <label>password</label>
+  {{input type="password" value=password}}
+</div>
+<button {{action 'login' identification password}}>Login</button>
+    {{# if errorMessage}}
+        Wrong password or username
+    {{/if}}
+{{outlet}}
